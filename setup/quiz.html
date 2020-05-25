@@ -1,0 +1,140 @@
+<div class="quiz">
+
+  <head>
+    <link rel="stylesheet"  href="quiz.css">
+
+  </head>
+
+  <style>
+/*background*/
+  body{
+  background-image: url('images/quiz-background.jpg');
+  background-size: cover;}
+  /* The container */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  </style>
+<div><img src="images/top.png" style="width:110%" alt="proceed" align="left">  </div>
+      <p style="font-size:50px;">Tell us about you!</p>
+      <h2 class="quiz-question">What is your age?</h2>
+      <ul data-quiz-question="1">
+
+        <label class="container">14-18
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">19-25
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+      </ul>
+
+      <h2 class="quiz-question">How much do you know about Finance?</h2>
+      <ul data-quiz-question="2">
+        <label class="container">None.
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Know briefly.
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">I have taken introductory course.
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+
+      </ul>
+
+      <h2 class="quiz-question">How can our resources help you?</h2>
+      <ul data-quiz-question="3">
+      <label class="container">Just to get a taste of it.
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Manage my money better.
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Start my business.
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      </ul>
+
+    </div>
+
+    <div class="quiz-result"></div>
+    <div><a href="file:///C:\Users\shubh\Desktop\Hackathon\Hackathon\setup\game.html"><img src="images/proceed.png" width="60" height="60" alt="proceed" class= "center"></a></div>
