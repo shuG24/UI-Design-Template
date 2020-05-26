@@ -10,4 +10,4 @@ Here - index.html is the main page which is to be used first.
 The login and sing up page are used as a modal popup on the combined.html.
 Then comes the StartPage.html. 
 
-The images are used on home page which is combined.html here.
+The images are used on home page which is index.html here. These webpages are just a template made for demonstrating different features which can be a part of web designing at a larger level.
